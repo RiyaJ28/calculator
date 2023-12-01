@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+    background-color: black; /* For browsers that do not support gradients */
+}
+body h1{
+    font-size: 35px;
+    color:white;
+}
+
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 300px;
+    gap: 10px;
+    padding: 10px;
+    
+    border-radius: 14px;
+}
+
+#display {
+    grid-column: span 4;
+    height: 50px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+    font-size: 24px;
+    border-radius: 7px;
+    background-image: linear-gradient(rgb(175, 174, 174) , black);
+    color:white;
+}
+
+button {
+    height: 60px;
+    width:60px;
+    color:white;
+    font-size: 24px;
+    border-radius: 50%;
+    background-image: linear-gradient(rgb(175, 174, 174) , black);
+}
+.opButton, .eqButton , .clearButton {
+    background-image: linear-gradient(#ff9dbd, rgb(194, 121, 161) );
+}
